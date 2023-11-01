@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+.dark .dark-mode-content,
+.dark .dark-mode-content * {
+	color: var(--text-customWhite);
+}
+
+.custom-h3-size h3 {
+	font-size: 24px;
+}
+
+.custom-img-height img {
+	max-height: 400px;
+}
+
+.custom-substack-widget button {
+	color: white !important;
+}
+
+/* :root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+} */
+
+/* body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+} */
+
+.dot-bullet {
+	width: 8px;
+	height: 8px;
+	border: 1px solid;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+
+.is-current .link {
+	color: rgb(247, 147, 26);
+}
+
+.is-current .indicator {
+	/* border: 1px solid rgb(247, 147, 26) !important; */
+	background-color: rgb(247, 147, 26) !important;
+}
+
+.tail-wrapper {
+	box-sizing: border-box;
+	margin: 0px 0px 8px;
+	min-width: 0px;
+	padding-bottom: 24px;
+}
+
+.tail-wrapper .item-tail {
+	position: absolute;
+	height: 102%;
+	left: 12px;
+	top: 19px;
+	box-sizing: content-box;
+}
+
+.tail-wrapper .item-tail::after {
+	width: 4px;
+	height: 100%;
+	background-color: rgb(71, 77, 87);
+	margin-left: 12px;
+	display: inline-block;
+	border-radius: 1px;
+	content: '';
+}
